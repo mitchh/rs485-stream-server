@@ -1,0 +1,53 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "ESPHome: Validate Component",
+            "type": "shell",
+            "command": "${workspaceFolder}/.venv/bin/python",
+            "args": [
+                "-c",
+                "import esphome.codegen as cg; import esphome.config_validation as cv; print('ESPHome imports successful')"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Format C++ Code",
+            "type": "shell",
+            "command": "clang-format",
+            "args": [
+                "-i",
+                "*.cpp",
+                "*.h"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Format Python Code",
+            "type": "shell",
+            "command": "${workspaceFolder}/.venv/bin/black",
+            "args": [
+                "*.py"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared"
+            }
+        }
+    ]
+}

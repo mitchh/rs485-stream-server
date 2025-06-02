@@ -1,0 +1,27 @@
+{
+  "storage_version": 1,
+  "name": "rs485-test",
+  "friendly_name": null,
+  "comment": null,
+  "esphome_version": "2025.5.1",
+  "src_version": 1,
+  "address": "rs485-test.local",
+  "web_port": null,
+  "esp_platform": "ESP8266",
+  "build_path": "/Users/mitch/dev/rs485-stream-server/.esphome/build/rs485-test",
+  "firmware_bin_path": "/Users/mitch/dev/rs485-stream-server/.esphome/build/rs485-test/.pioenvs/rs485-test/firmware.bin",
+  "loaded_integrations": [
+    "esp8266",
+    "esphome",
+    "external_components",
+    "mdns",
+    "network",
+    "preferences",
+    "rs485_stream_server",
+    "uart",
+    "wifi"
+  ],
+  "no_mdns": false,
+  "framework": "arduino",
+  "core_platform": "esp8266"
+}

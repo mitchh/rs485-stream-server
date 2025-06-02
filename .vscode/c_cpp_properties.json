@@ -1,0 +1,42 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/.venv/lib/python3.9/site-packages/esphome/**",
+                "~/.platformio/packages/framework-arduinoespressif32/**",
+                "~/.platformio/packages/framework-espidf/**",
+                "~/.platformio/packages/toolchain-xtensa-esp32/**",
+                "~/.platformio/packages/toolchain-xtensa-esp32s2/**",
+                "~/.platformio/packages/toolchain-xtensa-esp32s3/**",
+                "~/.platformio/packages/toolchain-riscv32-esp/**",
+                "~/.platformio/packages/framework-arduinoespressif32/cores/esp32/**",
+                "~/.platformio/packages/framework-arduinoespressif32/libraries/**",
+                "~/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/**",
+                "~/.platformio/packages/framework-espidf/components/**",
+                "/usr/local/include",
+                "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"
+            ],
+            "defines": [
+                "ARDUINO=10812",
+                "ARDUINO_ESP32_DEV",
+                "ESP32",
+                "ESP_PLATFORM",
+                "CORE_DEBUG_LEVEL=0",
+                "USE_ESP32",
+                "USE_ARDUINO",
+                "F_CPU=240000000L",
+                "ARDUINO_ARCH_ESP32",
+                "ARDUINO_BOARD=\"ESP32_DEV\"",
+                "ARDUINO_VARIANT=\"esp32\"",
+                "ESP32_DEV"
+            ],
+            "compilerPath": "/usr/bin/clang++",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "macos-clang-arm64"
+        }
+    ],
+    "version": 4
+}

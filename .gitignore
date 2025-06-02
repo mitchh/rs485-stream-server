@@ -1,0 +1,29 @@
+# ESPHome Component Development
+*.pyc
+__pycache__/
+.pytest_cache/
+.coverage
+.venv/
+venv/
+
+# Build artifacts
+build/
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# IDE files
+.vscode/ipch/
+*.code-workspace
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# ESPHome specific
+config/
+secrets.yaml

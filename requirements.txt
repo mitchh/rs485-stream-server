@@ -3,3 +3,5 @@ esphome>=2023.12.0
 black>=22.0.0
 pylint>=2.15.0
 pyyaml>=6.0
+
+# spell-checker:ignore pyyaml pylint

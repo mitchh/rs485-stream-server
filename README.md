@@ -14,6 +14,7 @@ A custom ESPHome component that creates a TCP-to-RS485 bridge, allowing network 
 ### VS Code Setup
 
 This workspace is configured with:
+
 - C++ IntelliSense for ESP32/ESPHome development
 - Python linting and formatting
 - ESPHome-specific tasks and debugging
@@ -37,7 +38,7 @@ Press `Cmd+Shift+P` (macOS) and type "Tasks: Run Task" to access:
 
 ```yaml
 external_components:
-  - source: github://yourusername/rs485-stream-server
+  - source: github://mitchh/rs485-stream-server
     components: [ rs485_stream_server ]
 
 uart:
@@ -46,9 +47,14 @@ uart:
   rx_pin: GPIO16
   baud_rate: 9600
 
+output:
+  - platform: gpio
+    id: flow_control_output
+    pin: GPIO4
+
 rs485_stream_server:
-  port: 23
-  tx_enable_pin: GPIO4
+  port: 6683
+  tx_enable_output flow_control_output
   uart_id: uart_bus
   buffer_size: 256
   client_timeout: 5min

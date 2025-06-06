@@ -6,25 +6,33 @@
         "*.yaml": "yaml",
         "*.yml": "yaml"
     },
-    "C_Cpp.intelliSenseEngine": "Default",
+    "C_Cpp.intelliSenseEngine": "default",
     "C_Cpp.default.cppStandard": "c++17",
     "C_Cpp.default.cStandard": "c11",
-    "C_Cpp.default.compilerPath": "/usr/bin/clang++",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cpptools",
+    "C_Cpp.default.compilerPath": "~/.platformio/packages/toolchain-xtensa/bin/xtensa-lx106-elf-g++",
     "C_Cpp.default.includePath": [
         "${workspaceFolder}/**",
-        "~/.platformio/packages/framework-arduinoespressif32/cores/esp32",
-        "~/.platformio/packages/framework-arduinoespressif32/libraries/**",
-        "~/.platformio/packages/toolchain-xtensa-esp32/xtensa-esp32-elf/include/**",
-        "/usr/local/include",
-        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"
+        "${workspaceFolder}/.venv/lib/python3.9/site-packages/esphome/**",
+        "~/.platformio/packages/framework-arduinoespressif8266/**",
+        "~/.platformio/packages/framework-arduinoespressif8266/cores/esp8266/**",
+        "~/.platformio/packages/framework-arduinoespressif8266/libraries/**",
+        "~/.platformio/packages/framework-arduinoespressif8266/tools/sdk/include/**",
+        "~/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include/**"
     ],
     "C_Cpp.default.defines": [
-        "ARDUINO=10812",
-        "ARDUINO_ESP32_DEV",
-        "ESP32",
-        "CORE_DEBUG_LEVEL=0",
-        "USE_ESP32"
+        "ARDUINO=10819",
+        "ARDUINO_ESP8266_NODEMCU_ESP12E",
+        "ESP8266",
+        "ARDUINO_ARCH_ESP8266",
+        "USE_ESP8266",
+        "USE_ARDUINO",
+        "F_CPU=80000000L",
+        "CORE_DEBUG_LEVEL=0"
     ],
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    // Set ESP8266 as the default configuration
+    "C_Cpp.default.configurationName": "ESP8266",
     // Python Configuration
     "python.interpreter": "${workspaceFolder}/.venv/bin/python",
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
@@ -39,5 +47,12 @@
     "files.insertFinalNewline": true,
     "yaml.schemas": {
         "https://esphome.io/schema.json": "*.yaml"
-    }
+    },
+    "cSpell.words": [
+        "esphome",
+        "ESP_LOGD",
+        "ESP_LOGV",
+        "ESP_LOGW",
+        "UART","codegen"
+    ]
 }

@@ -1,7 +1,44 @@
 {
     "configurations": [
         {
-            "name": "Mac",
+            "name": "ESP8266",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/.venv/lib/python3.9/site-packages/esphome/**",
+                "${workspaceFolder}/.esphome/build/esp8266-test/.piolibdeps/esp8266-test/**",
+                "~/.platformio/packages/framework-arduinoespressif8266/**",
+                "~/.platformio/packages/framework-arduinoespressif8266/cores/esp8266/**",
+                "~/.platformio/packages/framework-arduinoespressif8266/libraries/**",
+                "~/.platformio/packages/framework-arduinoespressif8266/tools/sdk/include/**",
+                "~/.platformio/packages/framework-arduinoespressif8266/tools/sdk/lwip2/include/**",
+                "~/.platformio/packages/toolchain-xtensa/**",
+                "~/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include/**"
+            ],
+            "defines": [
+                "ARDUINO=10819",
+                "ARDUINO_ESP8266_NODEMCU_ESP12E",
+                "ESP8266",
+                "ARDUINO_ARCH_ESP8266",
+                "ARDUINO_BOARD=\"NODEMCUV2\"",
+                "USE_ESP8266",
+                "USE_ARDUINO",
+                "F_CPU=80000000L",
+                "LWIP_OPEN_SRC",
+                "TCP_MSS=536",
+                "LWIP_FEATURES=1",
+                "LWIP_IPV6=0",
+                "CORE_DEBUG_LEVEL=0",
+                "__ets__",
+                "ICACHE_FLASH",
+                "PLATFORMIO=60111"
+            ],
+            "compilerPath": "~/.platformio/packages/toolchain-xtensa/bin/xtensa-lx106-elf-g++",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        },
+        {
+            "name": "ESP32",
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/.venv/lib/python3.9/site-packages/esphome/**",
